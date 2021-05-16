@@ -68,7 +68,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(4);
 						ItemStack newhelmet = doubleitem.getItemStack();
 						meta.helmetmeta(newhelmet);
 						World world=player.getWorld();
@@ -84,7 +85,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(4);
 						ItemStack newchestplate = doubleitem.getItemStack();
 						meta.chestplatemeta(newchestplate);
 						World world=player.getWorld();
@@ -101,7 +103,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(4);
 						ItemStack newleggings = doubleitem.getItemStack();
 						meta.chestplatemeta(newleggings);
 						World world=player.getWorld();
@@ -117,7 +120,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(4);
 						ItemStack newboots = doubleitem.getItemStack();
 						meta.chestplatemeta(newboots);
 						World world=player.getWorld();
@@ -140,7 +144,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(4);
 						ItemStack newpickaxe = doubleitem.getItemStack();
 						meta.pickaxemeta(newpickaxe);
 						World world=player.getWorld();
@@ -157,7 +162,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(6);
 						ItemStack newsword = doubleitem.getItemStack();
 						meta.swordmeta(newsword);
 						World world=player.getWorld();
@@ -178,8 +184,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
-						meta.b=rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(4);
 						ItemStack newaxe = doubleitem.getItemStack();
 						meta.axemeta(newaxe);
 						World world=player.getWorld();
@@ -195,7 +201,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(3);
 						ItemStack newshovel = doubleitem.getItemStack();
 						meta.shovelmeta(newshovel);
 						World world=player.getWorld();
@@ -211,7 +218,8 @@ if((doubleitem.getItemStack().getType().toString().toLowerCase().contains("bow")
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.a= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(7)+1;
+						meta.dizindex = rand.nextInt(6);
 						ItemStack newbow = doubleitem.getItemStack();
 						meta.bowmeta(newbow);
 						World world=player.getWorld();
