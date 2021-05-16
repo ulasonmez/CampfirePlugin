@@ -1,14 +1,14 @@
 package me.Blume.CampFire.Listeners;
 
+import java.util.Random;
+
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
@@ -24,11 +24,11 @@ public class duplicate implements Listener{
 	}
 	metas meta = new metas();
 
-	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void doubletheitem(PlayerDropItemEvent event) {
 		Player player = event.getPlayer();
 		Item doubleitem = event.getItemDrop();
+		Random rand = new Random();
 		if(!(doubleitem.getItemStack().getType().toString().toLowerCase().contains("helmet")) &&
 				!(doubleitem.getItemStack().getType().toString().toLowerCase().contains("leggings")) &&
 				!(doubleitem.getItemStack().getType().toString().toLowerCase().contains("chestplate")) &&
@@ -51,7 +51,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-					
+						
 						world.dropItemNaturally(doubleitem.getLocation().clone().add(0, 1, 0), doubleitem.getItemStack());
 
 						/*double speed =1;
@@ -68,6 +68,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newhelmet = doubleitem.getItemStack();
 						meta.helmetmeta(newhelmet);
 						World world=player.getWorld();
@@ -83,6 +84,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newchestplate = doubleitem.getItemStack();
 						meta.chestplatemeta(newchestplate);
 						World world=player.getWorld();
@@ -99,6 +101,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newleggings = doubleitem.getItemStack();
 						meta.chestplatemeta(newleggings);
 						World world=player.getWorld();
@@ -114,6 +117,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newboots = doubleitem.getItemStack();
 						meta.chestplatemeta(newboots);
 						World world=player.getWorld();
@@ -136,6 +140,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newpickaxe = doubleitem.getItemStack();
 						meta.pickaxemeta(newpickaxe);
 						World world=player.getWorld();
@@ -152,6 +157,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newsword = doubleitem.getItemStack();
 						meta.swordmeta(newsword);
 						World world=player.getWorld();
@@ -172,6 +178,8 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
+						meta.b=rand.nextInt(7)+1;
 						ItemStack newaxe = doubleitem.getItemStack();
 						meta.axemeta(newaxe);
 						World world=player.getWorld();
@@ -187,6 +195,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newshovel = doubleitem.getItemStack();
 						meta.shovelmeta(newshovel);
 						World world=player.getWorld();
@@ -202,6 +211,7 @@ if((doubleitem.getItemStack().getType().toString().toLowerCase().contains("bow")
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
+						meta.a= rand.nextInt(7)+1;
 						ItemStack newbow = doubleitem.getItemStack();
 						meta.bowmeta(newbow);
 						World world=player.getWorld();
