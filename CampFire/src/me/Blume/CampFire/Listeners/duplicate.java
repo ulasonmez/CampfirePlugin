@@ -201,7 +201,7 @@ public class duplicate implements Listener{
 				@Override
 				public void run() {
 					if(doubleitem.getLocation().getBlock().getRelative(0, 0, 0).getType()==Material.CAMPFIRE) {
-						meta.seviye= rand.nextInt(7)+1;
+						meta.seviye= rand.nextInt(10)+1;
 						meta.dizindex = rand.nextInt(3);
 						ItemStack newshovel = doubleitem.getItemStack();
 						meta.shovelmeta(newshovel);
